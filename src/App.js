@@ -22,118 +22,118 @@ const VehicleSalesAnalysis = () => {
   ];
 
   const yearlyTrend = [
-    { year: '2007', sales: 2856, avgPrice: 8524 },
-    { year: '2008', sales: 5234, avgPrice: 9123 },
-    { year: '2009', sales: 7821, avgPrice: 8967 },
-    { year: '2010', sales: 12456, avgPrice: 9845 },
-    { year: '2011', sales: 18234, avgPrice: 10234 },
-    { year: '2012', sales: 25678, avgPrice: 11567 },
-    { year: '2013', sales: 32145, avgPrice: 12345 },
-    { year: '2014', sales: 45123, avgPrice: 13678 },
+    { year: '2007', sales: 27577, avgPrice: 7973 },
+    { year: '2008', sales: 29908, avgPrice: 9548 },
+    { year: '2009', sales: 20692, avgPrice: 10607 },
+    { year: '2010', sales: 27311, avgPrice: 12227 },
+    { year: '2011', sales: 45781, avgPrice: 15219 },
+    { year: '2012', sales: 94869, avgPrice: 15635 },
+    { year: '2013', sales: 91325, avgPrice: 16298 },
+    { year: '2014', sales: 72013, avgPrice: 17940 },
     { year: '2015', sales: 58934, avgPrice: 14234 }
   ];
 
   const topBrands = [
-    { brand: 'Ford', count: 52341, avgPrice: 12500 },
-    { brand: 'Chevrolet', count: 48234, avgPrice: 11800 },
-    { brand: 'Toyota', count: 45678, avgPrice: 14200 },
-    { brand: 'Honda', count: 38945, avgPrice: 13500 },
-    { brand: 'Nissan', count: 32156, avgPrice: 11200 },
-    { brand: 'Dodge', count: 28934, avgPrice: 10800 },
-    { brand: 'Jeep', count: 25467, avgPrice: 15600 },
-    { brand: 'GMC', count: 22345, avgPrice: 16200 }
+    { brand: 'Ford', count: 86589, avgPrice: 14386 },
+    { brand: 'Chevrolet', count: 54814, avgPrice: 11391 },
+    { brand: 'Nissan', count: 51623, avgPrice: 11890 },
+    { brand: 'Toyota', count: 36186, avgPrice: 12720 },
+    { brand: 'Dodge', count: 29292, avgPrice: 11253 },
+    { brand: 'Honda', count: 24392, avgPrice: 11793 },
+    { brand: 'Hyundai', count: 21085, avgPrice: 10959 },
+    { brand: 'Kia', count: 17588, avgPrice: 11772 }
   ];
 
   const priceDistribution = [
-    { range: '0-5K', count: 45234 },
-    { range: '5-10K', count: 125678 },
-    { range: '10-15K', count: 156789 },
-    { range: '15-20K', count: 98765 },
-    { range: '20-30K', count: 67845 },
-    { range: '30-50K', count: 34567 },
-    { range: '50K+', count: 12345 }
+    { range: '0-5K', count: 77565 },
+    { range: '5-10K', count: 103698 },
+    { range: '10-15K', count: 140721 },
+    { range: '15-20K', count: 85052 },
+    { range: '20-30K', count: 78827 },
+    { range: '30-50K', count: 11382 },
+    { range: '50K+', count: 0 }
   ];
 
   const conditionPrice = [
-    { condition: 'Poor (1-10)', avgPrice: 4523, count: 12456 },
-    { condition: 'Fair (11-20)', avgPrice: 6845, count: 45678 },
-    { condition: 'Good (21-30)', avgPrice: 9234, count: 125678 },
-    { condition: 'V.Good (31-40)', avgPrice: 12456, count: 198765 },
-    { condition: 'Excel (41-49)', avgPrice: 16789, count: 156789 }
+    { condition: 'Poor (1-10)', avgPrice: 12998, count: 56922 },
+    { condition: 'Fair (11-20)', avgPrice: 5628, count: 35269 },
+    { condition: 'Good (21-30)', avgPrice: 9378, count: 105083 },
+    { condition: 'V.Good (31-40)', avgPrice: 13321, count: 156838 },
+    { condition: 'Excel (41-49)', avgPrice: 17601, count: 143133 }
   ];
 
   const transmissionData = [
-    { name: 'Automatic', value: 534812, percentage: 94.2 },
-    { name: 'Manual', value: 32988, percentage: 5.8 }
+    { name: 'Automatic', value: 482615, percentage: 97.1 },
+    { name: 'Manual', value: 14630, percentage: 2.9 }
   ];
 
   const colorPreference = [
-    { color: 'White', count: 125678, hex: '#E5E7EB' },
-    { color: 'Black', count: 98765, hex: '#1F2937' },
-    { color: 'Silver', count: 87654, hex: '#9CA3AF' },
-    { color: 'Gray', count: 76543, hex: '#6B7280' },
-    { color: 'Blue', count: 65432, hex: '#3B82F6' },
-    { color: 'Red', count: 54321, hex: '#EF4444' },
-    { color: 'Green', count: 32156, hex: '#10B981' },
-    { color: 'Others', count: 45678, hex: '#F59E0B' }
+    { color: 'White', count: 94715, hex: '#E5E7EB' },
+    { color: 'Black', count: 99083, hex: '#1F2937' },
+    { color: 'Silver', count: 75494, hex: '#9CA3AF' },
+    { color: 'Gray', count: 75640, hex: '#6B7280' },
+    { color: 'Blue', count: 45705, hex: '#3B82F6' },
+    { color: 'Red', count: 38715, hex: '#EF4444' },
+    { color: 'Green', count: 8599, hex: '#10B981' },
+    { color: 'Others', count: 59290, hex: '#F59E0B' }
   ];
 
   const odometerPrice = [
-    { odometer: '0-50K', avgPrice: 16234, count: 125678 },
-    { odometer: '50-100K', avgPrice: 12456, count: 198765 },
-    { odometer: '100-150K', avgPrice: 8934, count: 156789 },
-    { odometer: '150-200K', avgPrice: 6234, count: 87654 },
-    { odometer: '200K+', avgPrice: 4123, count: 45678 }
+    { odometer: '0-50K', avgPrice: 17253, count: 244442 },
+    { odometer: '50-100K', avgPrice: 11730, count: 145135 },
+    { odometer: '100-150K', avgPrice: 6280, count: 80191 },
+    { odometer: '150-200K', avgPrice: 3964, count: 27469 },
+    { odometer: '200K+', avgPrice: 2928, count: 8 }
   ];
 
   const topStates = [
-    { state: 'CA', sales: 78945, avgPrice: 13567 },
-    { state: 'TX', sales: 67834, avgPrice: 12345 },
-    { state: 'FL', sales: 56723, avgPrice: 11234 },
-    { state: 'NY', sales: 45612, avgPrice: 14678 },
-    { state: 'PA', sales: 38945, avgPrice: 10987 },
-    { state: 'OH', sales: 32156, avgPrice: 9876 },
-    { state: 'IL', sales: 28934, avgPrice: 11456 },
-    { state: 'MI', sales: 25467, avgPrice: 10234 }
+    { state: 'CA', sales: 63449, avgPrice: 13362 },
+    { state: 'TX', sales: 40915, avgPrice: 12733 },
+    { state: 'FL', sales: 76504, avgPrice: 13380 },
+    { state: 'GA', sales: 30223, avgPrice: 12534 },
+    { state: 'PA', sales: 49032, avgPrice: 14962 },
+    { state: 'NJ', sales: 24787, avgPrice: 12919 },
+    { state: 'IL', sales: 21649, avgPrice: 14477 },
+    { state: 'TN', sales: 18904, avgPrice: 16252 }
   ];
 
   const modelsByBrand = [
-    { brand: 'Ford', model: 'F-150', count: 15678 },
-    { brand: 'Chevrolet', model: 'Silverado', count: 14234 },
-    { brand: 'Toyota', model: 'Camry', count: 12456 },
-    { brand: 'Honda', model: 'Accord', count: 11234 },
-    { brand: 'Nissan', model: 'Altima', count: 9876 }
+    { brand: 'Ford', model: 'F-150', count: 13532 },
+    { brand: 'Ford', model: 'Fusion', count: 13532 },
+    { brand: 'Toyota', model: 'Camry', count: 11598 },
+    { brand: 'Ford', model: 'Escape', count: 11421 },
+    { brand: 'Nissan', model: 'Altima', count: 18941 }
   ];
 
   const monthlyTrend = [
-    { month: 'Jan', sales: 42345 },
-    { month: 'Feb', sales: 38234 },
-    { month: 'Mar', sales: 45678 },
-    { month: 'Apr', sales: 48934 },
-    { month: 'May', sales: 52345 },
-    { month: 'Jun', sales: 49876 },
-    { month: 'Jul', sales: 51234 },
-    { month: 'Aug', sales: 47654 },
-    { month: 'Sep', sales: 44567 },
-    { month: 'Oct', sales: 46789 },
-    { month: 'Nov', sales: 43456 },
-    { month: 'Dec', sales: 48234 }
+    { month: 'Jan', sales: 126160 },
+    { month: 'Feb', sales: 146419 },
+    { month: 'Mar', sales: 41102 },
+    { month: 'Apr', sales: 1227 },
+    { month: 'May', sales: 47255 },
+    { month: 'Jun', sales: 88174 },
+    { month: 'Jul', sales: 1113 },
+    { month: 'Aug', sales: 0 },
+    { month: 'Sep', sales: 0 },
+    { month: 'Oct', sales: 0 },
+    { month: 'Nov', sales: 0 },
+    { month: 'Dec', sales: 45795 }
   ];
 
   const bodyTypes = [
-    { type: 'Sedan', count: 198765, percentage: 35.6 },
-    { type: 'SUV', count: 167834, percentage: 30.0 },
-    { type: 'Truck', count: 112345, percentage: 20.1 },
-    { type: 'Coupe', count: 45678, percentage: 8.2 },
-    { type: 'Others', count: 34215, percentage: 6.1 }
+    { type: 'Sedan', count: 224515, percentage: 53.8 },
+    { type: 'SUV', count: 128825, percentage: 30.9 },
+    { type: 'Hatchback', count: 24897, percentage: 6.0 },
+    { type: 'Minivan', count: 24129, percentage: 5.8 },
+    { type: 'Wagon', count: 15135, percentage: 3.6 }
   ];
 
   const interiorColors = [
-    { color: 'Black', count: 234567 },
-    { color: 'Gray', count: 156789 },
-    { color: 'Beige', count: 98765 },
-    { color: 'Brown', count: 45678 },
-    { color: 'Others', count: 23034 }
+    { color: 'Black', count: 224994 },
+    { color: 'Gray', count: 158677 },
+    { color: 'Beige', count: 51817 },
+    { color: 'Tan', count: 37313 },
+    { color: 'Others', count: 13606 }
   ];
 
   const COLORS = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#14B8A6', '#F97316'];
@@ -172,7 +172,7 @@ const VehicleSalesAnalysis = () => {
             <p className="mt-4 text-sm font-bold text-gray-300">
               Selama tahun 2007 hingga 2015, penjualan kendaraan mengalami pertumbuhan yang signifikan, dengan
               total pertumbuhan sebesar 1,863% dan kenaikan harga rata-rata sebesar 67%.
-              Tahun 2015 menjadi tahun puncak dengan jumlah penjualan tertinggi.
+              Tahun 2014 menjadi tahun puncak dengan jumlah penjualan tertinggi.
             </p>
           </div>
         );
@@ -190,8 +190,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama tahun 2007 hingga 2015, Ford mendominasi penjualan kendaraan dengan total penjualan sebanyak 52,341 unit,
-              diikuti oleh Chevrolet dan Toyota. Merek-merek ini menunjukkan performa terbaik dengan harga rata-rata di atas $12,000.
+              Selama tahun 2007 hingga 2015, Ford mendominasi penjualan kendaraan dengan total penjualan sebanyak 86,589 unit,
+              diikuti oleh Chevrolet dan Nissan. Merek-merek ini menunjukkan jaminan kualitas dan kepercayaan konsumen.
             </p>
           </div>
         );
@@ -209,9 +209,9 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Dari distribusi harga jual kendaraan, kategori harga 10-15K mendominasi pasar dengan penjualan sebanyak 156,789
-              unit, diikuti oleh kategori harga 5-10K dengan jumlah penjualan 125,678 unit.
-              Kategori harga lebih tinggi (20-30K) memiliki penurunan yang signifikan.
+              Dari distribusi harga jual kendaraan, kategori harga 10-15K mendominasi pasar dengan penjualan sebanyak 140,721
+              unit, diikuti oleh kategori harga 5-10K dengan jumlah penjualan 103,698 unit.
+              Kategori harga lebih tinggi (30-50K) memiliki penurunan yang signifikan.
             </p>
           </div>
         );
@@ -229,9 +229,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Kendaraan dengan kondisi Excellent (41-49) memiliki harga jual tertinggi dengan rata-rata harga $16,789,
-              sementara kendaraan dengan kondisi Poor (1-10) memiliki harga rata-rata $4,523, menunjukkan pengaruh besar
-              kondisi terhadap harga jual kendaraan.
+              Kendaraan dengan kondisi Excellent (41-49) dihargai rata-rata $17,601, sementara Poor (1-10) sekitar $12,998, lebih tinggi dibandingkan Fair (11-20) yang hanya $5,628.
+              Meskipun harga Poor lebih tinggi, kendaraan ini lebih diminati karena harganya yang lebih terjangkau dan banyak yang melihat kesempatan untuk memperbaiki kendaraan sesuai kebutuhan, sementara Fair sering dianggap kurang menarik untuk perbaikan.
             </p>
           </div>
         );
@@ -261,16 +260,16 @@ const VehicleSalesAnalysis = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-blue-500 bg-opacity-20 p-4 rounded-lg text-center">
                 <p className="text-blue-400 text-sm">Automatic</p>
-                <p className="text-3xl font-bold text-white">534,812</p>
+                <p className="text-3xl font-bold text-white">482,615</p>
               </div>
               <div className="bg-green-500 bg-opacity-20 p-4 rounded-lg text-center">
                 <p className="text-green-400 text-sm">Manual</p>
-                <p className="text-3xl font-bold text-white">32,988</p>
+                <p className="text-3xl font-bold text-white">14,630</p>
               </div>
             </div>
             <p className="mt-4 text-sm text-gray-300">
-              Dari data yang ada, preferensi transmisi kendaraan lebih condong ke transmisi Automatic (94.2%) dibandingkan Manual (5.8%),
-              dengan jumlah kendaraan Automatic yang terjual sebanyak 534,812 unit.
+              Dari data yang ada, preferensi transmisi kendaraan lebih condong ke transmisi Automatic (97.1%) dibandingkan Manual (2.9%),
+              dengan jumlah kendaraan Automatic yang terjual sebanyak 482,615 unit.
             </p>
           </div>
         );
@@ -292,8 +291,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Data menunjukkan bahwa dari penjualan tahun 2007 hingga 2015. Warna kendaraan yang paling diminati adalah putih (125,678 unit), diikuti oleh hitam (98,765 unit).
-              Warna lain seperti merah dan biru juga menunjukkan popularitas yang tinggi.
+              Data menunjukkan bahwa dari penjualan tahun 2007 hingga 2015. Warna kendaraan yang paling diminati adalah hitam (99,083 unit), diikuti oleh putih (94,715 unit).
+              Warna lain seperti merah dan biru juga menunjukkan popularitas yang lumayan peminatnya.
             </p>
           </div>
         );
@@ -311,8 +310,8 @@ const VehicleSalesAnalysis = () => {
               </AreaChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama periode pengamatan, kendaraan dengan jarak tempuh 0-50K km memiliki harga rata-rata sekitar $16,234,
-              sementara kendaraan dengan jarak tempuh lebih dari 200K km mengalami penurunan harga rata-rata menjadi $4,123.
+              Selama periode pengamatan, kendaraan dengan jarak tempuh 0-50K km memiliki harga rata-rata sekitar $17,253,
+              sementara kendaraan dengan jarak tempuh lebih dari 200K km mengalami penurunan harga rata-rata menjadi $2,928.
             </p>
           </div> 
         );
@@ -330,8 +329,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama tahun 2007 hingga 2015, California (CA) memiliki tingkat penjualan tertinggi, mencapai 78,945 unit,
-              diikuti oleh Texas (TX) dengan penjualan sebanyak 67,834 unit. Kedua negara bagian ini menyumbang lebih dari
+              Selama tahun 2007 hingga 2015, Florida (FL) memiliki tingkat penjualan tertinggi, mencapai 76,504 unit,
+              diikuti oleh California (CA) dengan penjualan sebanyak 63,449 unit. Kedua negara bagian ini menyumbang lebih dari
               25% dari total penjualan kendaraan.
             </p>
           </div>
@@ -350,8 +349,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama periode pengamatan, model Ford F-150 menjadi model terlaris dengan tingkat penjualan mencapai 15,678 unit,
-              diikuti oleh Chevrolet Silverado dengan 14,234 unit. Model-model ini mendominasi pasar kendaraan pickup.
+              Selama periode pengamatan, model Ford Altima menjadi model terlaris dengan tingkat penjualan mencapai 18,941 unit,
+              diikuti oleh Ford F-150 dengan 13,532 unit. Model-model ini mendominasi pasar kendaraan.
             </p>
           </div>
         );
@@ -370,7 +369,7 @@ const VehicleSalesAnalysis = () => {
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
               Selama tahun 2007 hingga 2015, rata-rata harga kendaraan mengalami kenaikan signifikan, dengan harga rata-rata
-              mencapai $16,789 pada tahun 2015, meningkat sekitar 67% dibandingkan tahun 2007.
+              mencapai $17,940 pada tahun 2014, namun mengalami penurunan pada tahun 2015 menjadi $14,234 tetapi tetap meningkat sekitar 60% dibandingkan tahun 2007.
             </p>
           </div>
         );
@@ -388,8 +387,8 @@ const VehicleSalesAnalysis = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama tahun 2007 hingga 2015, warna interior hitam menjadi pilihan utama dengan penjualan mencapai 234,567 unit,
-              diikuti oleh abu-abu (156,789 unit). Pilihan warna interior ini mencerminkan preferensi konsumen terhadap warna yang
+              Selama tahun 2007 hingga 2015, warna interior hitam menjadi pilihan utama dengan penjualan mencapai 224,994 unit,
+              diikuti oleh abu-abu (158,677 unit). Pilihan warna interior ini mencerminkan preferensi konsumen terhadap warna yang
               lebih netral dan elegan.
             </p>
           </div>
@@ -408,9 +407,7 @@ const VehicleSalesAnalysis = () => {
               </LineChart>
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
-              Selama tahun 2007 hingga 2015, penjualan kendaraan mencapai puncaknya pada bulan Mei dengan 52,345 unit, diikuti
-              oleh bulan Juli (51,234 unit) dan bulan Juni (49,876 unit), yang menunjukkan tren peningkatan penjualan pada
-              musim panas.
+              Penjualan tertinggi terjadi pada musim dingin (Januari, Februari, Desember), diikuti musim semi (Maret, April, Mei). Musim panas dan musim gugur menunjukkan penurunan atau tidak ada penjualan.
             </p>
           </div>
         );
@@ -439,9 +436,8 @@ const VehicleSalesAnalysis = () => {
             </ResponsiveContainer>
             <p className="mt-4 text-sm text-gray-300">
               Selama periode pengamatan, tipe body kendaraan yang paling diminati adalah Sedan, dengan penjualan sebanyak
-              198,765 unit (35.6% dari total penjualan). SUV berada di posisi kedua dengan penjualan 167,834 unit (30.0%),
-              diikuti oleh tipe Truk dengan 112,345 unit (20.1%). Sementara tipe Coupe dan lainnya menyumbang bagian yang lebih kecil
-              dari pasar kendaraan.
+              224,515 unit (53.8% dari total penjualan). SUV berada di posisi kedua dengan penjualan 128,285 unit (30.9%),
+              diikuti oleh tipe Hatchback dengan 24,897 unit (6.0%). 
             </p>
           </div>
         );
